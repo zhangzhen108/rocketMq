@@ -1,0 +1,15 @@
+server:
+  port: 8099
+spring:
+  application:
+    name: rocketmq
+org:
+  rocketmq:
+    product:
+      retryTimesWhenSend: 3
+      sendMsgTimeout: 5000
+    cosumer:
+      maxReconsumeTimes: 3
+      consumeThreadMax: 1
+      consumeThreadMin: 1
+    namesrvAddr: 10.1.0.104:9876;10.1.0.103:9876
